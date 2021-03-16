@@ -1,0 +1,14 @@
+{% extends 'layouts/main.twig' %}
+
+{% block title %}Каталог товаров{% endblock %}
+
+{% block content %}
+    {% for good in goods %}
+        <h2>{{ good.name }}</h2>
+        <p>Цена: {{ good.price }}</p>
+        <a href="/good/one?id={{ good.id }}">подробнее</a>
+        <hr>
+    {% else %}
+        Список пуст
+    {% endfor %}
+{% endblock %}

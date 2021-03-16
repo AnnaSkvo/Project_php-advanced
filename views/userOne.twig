@@ -1,0 +1,9 @@
+{% extends 'layouts/main.twig' %}
+
+{% block title %}Пользователь: {{user.login  }}{% endblock %}
+
+{% block content %}
+    <h2>{{user.login}}</h2>
+    {{user.name}}
+    <hr>
+{% endblock %}

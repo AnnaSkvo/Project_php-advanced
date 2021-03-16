@@ -1,0 +1,10 @@
+{% extends 'layouts/main.twig' %}
+
+{% block title %}{{ good.name }}{% endblock %}
+
+{% block content %}
+    <h2>{{ good.name }}</h2>
+    {{ good.info }} <br>
+    Цена: {{ good.price }}р.
+    <a href="/basket/add?id={{ good.id }}">В корзину</a>
+{% endblock %}

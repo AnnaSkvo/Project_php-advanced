@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{% block title %}Мой магазин{% endblock %}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+
+</head>
+<body>
+<ul>
+    <li><a href="/good/all">Все товары</a></li>
+    <li><a href="/basket/index">Корзина</a></li>
+    <li><a href="/user/all">Пользователи</a></li>
+    <li><a href="/user/add">Добавить пользователя</a></li>
+</ul>
+    {% block content %}{% endblock %}
+</body>
+</html>
